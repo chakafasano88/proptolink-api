@@ -1,0 +1,5 @@
+type Mutation {
+  signup(email: String!, confirmPassword: String!, password: String!, firstName: String!, lastName: String!, permissions: String, status: Int): AuthPayload
+  login(email: String!, password: String!, permissions: String): AuthPayload
+  signout: SuccessMessage
+}
